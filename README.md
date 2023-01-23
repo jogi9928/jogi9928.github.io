@@ -6,7 +6,7 @@
 - JS
 
 ## In-Class Assignments
-- [ICA1](jogi9928.github.io/ica.html)
+- [ICA1](ica/ica1.html)
 - ICA2
 - ICA3
 - ICA4
