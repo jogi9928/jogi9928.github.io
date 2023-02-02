@@ -167,6 +167,8 @@ footer {
 {
   display:flex;
   flex-wrap:flex;
+  align-items: center;
+
 }
 .container > img{
   flex: 1 50%;
