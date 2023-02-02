@@ -63,6 +63,7 @@ body > * {
 main, header, nav, article, aside, footer, section {
   background-color: rgba(0,255,0,0.5);
   padding: 1%;
+  display: flex
 }
 
 h1 {
@@ -72,8 +73,9 @@ h1 {
 
 header aside img {
   display: block;
-  height: 20px;
-  padding-top: 10.15 px;
+  height: 10px;
+  padding-top: 3 px;
+
 }
 
 nav {
@@ -87,6 +89,14 @@ nav ul {
   list-style-type: none;
   flex: 2;
   display: flex;
+  flex-flow: row wrap;
+}
+section{
+  flex=2;
+}
+section:nth-of-type(2)
+{
+  flex:1;
 }
 
 nav li {
