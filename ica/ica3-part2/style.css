@@ -58,7 +58,6 @@ header {
 section{
   display: flex;
   flex: 3;
-  flex-wrap: wrap;
 }
 section:last-child
 {
@@ -66,14 +65,15 @@ section:last-child
 }
 article
 {
-  flex: 200px;
+  flex: 3 200px;
+  flex-wrap: wrap;
 }
 
 div 
 {
   display: flex;
   align-items: stretch;
-  justify-content: space-around;
+  justify-content: center;
   flex: 100px;
   
 }
