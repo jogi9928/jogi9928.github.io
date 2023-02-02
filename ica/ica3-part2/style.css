@@ -60,22 +60,26 @@ body > * {
   padding: 1%;
 }
 
-main, header, nav, article, aside, footer, section {
+main, header, nav, article, aside, section {
+  background-color: rgba(0,255,0,0.5);
+  padding: 1%;
+  display: flex
+}
+footer
+{
   background-color: rgba(0,255,0,0.5);
   padding: 1%;
   display: flex
 }
 
 h1 {
-  flex: 5;
+  flex: 4;
   text-transform: uppercase;
 }
 
 header aside img {
   display: block;
-  height: 10px;
-  padding-top: 3 px;
-
+  height: 5px;
 }
 
 nav {
@@ -87,9 +91,9 @@ nav {
 nav ul {
   padding: 0;
   list-style-type: none;
-  flex: 2;
   display: flex;
-  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 section{
   flex=2;
