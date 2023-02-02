@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  width: 100%;
+  width: 70%;
   min-width: 800px;
   margin: 0 auto;
 }
@@ -53,34 +53,44 @@ p, li {
 header {
   margin-bottom: 10px;
   display: flex;
+  flex-flow: row wrap;
+}
+section{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+article
+{
+  align-items:stretch;
+  flex:80%;
+}
+div 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 body > * {
-  background-color: greenyellow;
+  background-color: red;
   padding: 1%;
 }
 
-main, header, nav, article, aside, section {
+main, header, nav, article, aside, footer, section {
   background-color: rgba(0,255,0,0.5);
   padding: 1%;
-  display: flex;
-  flex=2;
-}
-footer
-{
-  background-color: rgba(0,255,0,0.5);
-  padding: 1%;
-  display: flex
 }
 
 h1 {
-  flex: 4;
+  flex: 5;
   text-transform: uppercase;
 }
 
-header aside img {
+header img {
   display: block;
-  height: 5px;
+  height: 60px;
+  padding-top: 20.15px;
 }
 
 nav {
@@ -92,20 +102,8 @@ nav {
 nav ul {
   padding: 0;
   list-style-type: none;
+  flex: 2;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-section{
-  display:flex;
-}
-article 
-{
-  flex:2;
-}
-article:nth-of-type(2)
-{
-  flex: 1;
 }
 
 nav li {
@@ -134,11 +132,6 @@ main {
 article, section {
   flex: 4;
 }
-div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 
 aside {
   flex: 1;
@@ -159,3 +152,4 @@ aside img {
 footer {
   margin-top: 10px;
 }
+
