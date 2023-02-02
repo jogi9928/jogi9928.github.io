@@ -65,7 +65,7 @@ section:last-child
 }
 article
 {
-  flex: 3 200px;
+  flex: 200px;
   flex-wrap: wrap;
 }
 
@@ -167,8 +167,8 @@ footer {
 .container
 {
   display:flex;
-  max-height: 200px;
+  flex-wrap:flex
 }
 .container > img{
-  flex:1;
+  flex:150;
 }
