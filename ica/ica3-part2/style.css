@@ -99,6 +99,7 @@ nav ul {
 }
 section{
   display:flex;
+  flex-direction: row;
   flex=2;
 }
 section:nth-of-type(2)
