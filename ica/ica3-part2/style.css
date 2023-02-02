@@ -57,18 +57,23 @@ header {
 }
 section{
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 article
 {
-  
+  flex: 3 200px;
 }
+
 div 
 {
   display: flex;
   align-items: stretch;
   justify-content: space-evenly;
+}
+button {
+  flex: 1 auto;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 body > * {
