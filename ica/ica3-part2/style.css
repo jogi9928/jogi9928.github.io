@@ -57,6 +57,11 @@ header {
 }
 section{
   display: flex;
+  flex: 3;
+}
+section:last-child
+{
+  flex:1;
 }
 article
 {
