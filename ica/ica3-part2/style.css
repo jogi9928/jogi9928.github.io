@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  width: 70%;
+  width: 100%;
   min-width: 800px;
   margin: 0 auto;
 }
@@ -164,4 +164,11 @@ aside img {
 footer {
   margin-top: 10px;
 }
-
+.container
+{
+  display:flex;
+  max-height: 200px;
+}
+.container > img{
+  flex:1;
+}
