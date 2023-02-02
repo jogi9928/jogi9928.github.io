@@ -53,7 +53,6 @@ p, li {
 header {
   margin-bottom: 10px;
   display: flex;
-  flex-flow: row wrap;
 }
 section{
   display: flex;
