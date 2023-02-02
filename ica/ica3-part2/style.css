@@ -58,6 +58,7 @@ header {
 section{
   display: flex;
   flex: 3;
+  flex-wrap: wrap;
 }
 section:last-child
 {
@@ -65,7 +66,7 @@ section:last-child
 }
 article
 {
-  flex: 3 200px;
+  flex: 200px;
 }
 
 div 
