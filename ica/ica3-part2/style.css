@@ -90,7 +90,7 @@ body > * {
 }
 
 main, header, nav, article, aside, footer, section {
-  background-color: greenyellow;
+  background-color: rgba(0,255,0,0.5);
   padding: 1%;
 }
 
