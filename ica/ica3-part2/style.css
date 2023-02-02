@@ -56,13 +56,13 @@ header {
   flex-flow: row wrap;
 }
 section{
-  
-}
-article
-{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+article
+{
+  
 }
 div 
 {
