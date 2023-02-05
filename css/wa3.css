@@ -51,20 +51,7 @@ header {
     margin-bottom: 10px;
     display: flex;
   }
-  div 
-  {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    flex: 100px;
-    
-  }
-  button {
-    flex: 1 auto;
-    margin: 5px;
-    font-size: 25px;
-    line-height: 2;
-  }
+
   body > * {
     background-color: dodgerblue;
     padding: 1%;
