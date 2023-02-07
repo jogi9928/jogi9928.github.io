@@ -30,12 +30,12 @@ body {
   }
 
   a:hover {
-    color: green
+    color: green;
     text-decoration: none;
   }
   ul
   {
     background-color: #eeeeee;
     border: 5px solid purple;
-    padding: 20px;
+    padding: 35px;
   }
