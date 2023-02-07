@@ -25,15 +25,16 @@ body {
 
   a:link,
   a:visited {
-    color: green;
+    color: fb6542;
   }
 
   a:hover {
+    color: green
     text-decoration: none;
   }
   ul
   {
-    color: #eeeeee;
+    background-color: #eeeeee;
     border: 5px solid purple;
-    padding-bottom: 25%;
+    padding: 20px;
   }

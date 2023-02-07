@@ -9,7 +9,7 @@
 - [ICA1](ica/ica1.html)
 - ICA2
 - [ICA3](ica/ica3a.html)
-- ICA4
+- [ICA4](ica/ica4.html)
 - ICA5
 - ICA6
 - ICA7
