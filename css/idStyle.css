@@ -38,8 +38,8 @@ html {
 }
 .card header, footer
 {
-    height: 1.875em;
-    padding: 0.625em;
+    height: 3em;
+    padding: 1em;
 }
 .card h2, p
 {
@@ -47,21 +47,21 @@ html {
 }
 .card article
 {
-    height: 7.5em;
+    height: 12em;
     background-color: rgba(14, 17, 17, 0.5);
 }
 .card h2
 {
-    line-height: 0.9375em;
+    line-height: 1.5em;
     font-size: 1.25em;
 }
 .card footer
 {
-    line-height: 0.9375em;
-    font-size: 0.9375em;
+    line-height: 1.5em;
+    font-size: 2em;
 }
 .card article
 {
-    padding-left: 0.625em;
+    padding-left: 1em;
     color: whitesmoke;
 }
