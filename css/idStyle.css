@@ -36,3 +36,32 @@ html {
     max-height: 100%;
     float: right;
 }
+.card header, footer
+{
+    height: 1.875em;
+    padding: 0.625em;
+}
+.card h2, p
+{
+    margin: 0em;
+}
+.card article
+{
+    height: 7.5em;
+    background-color: (14, 17, 17, 0.5);
+}
+.card h2
+{
+    line-height: 0.9375em;
+    font-size: 1.25em;
+}
+.footerP
+{
+    line-height: 0.9375em;
+    font-size: 0.9375em;
+}
+.card article
+{
+    padding-left: 0.625em;
+    color: whitesmoke;
+}
