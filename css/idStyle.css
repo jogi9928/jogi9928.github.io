@@ -48,7 +48,7 @@ html {
 .card article
 {
     height: 7.5em;
-    background-color: (14, 17, 17, 0.5);
+    background-color: rgba(14, 17, 17, 0.5);
 }
 .card h2
 {
