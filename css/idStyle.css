@@ -53,15 +53,16 @@ html {
 .card h2
 {
     line-height: 1.5em;
-    font-size: 1.25em;
+    font-size: 2em;
 }
 .card footer
 {
     line-height: 1.5em;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .card article
 {
     padding-left: 1em;
+    padding-top:1em;
     color: whitesmoke;
 }
