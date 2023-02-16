@@ -10,6 +10,7 @@
   body {
     margin: 0;
     background: #ccc;
+    width: 100%;
   }
   
   article {
@@ -40,6 +41,10 @@
   }
   
   /* Your CSS below here */
+  div
+  {
+    width: 100%;
+  }
 #imgTop 
 {
     background-image: url(top-image.png);
@@ -53,7 +58,7 @@
 {
     background-image: url(bottom-image.png);
     background-position: center bottom;
-    background-size: contain;
+    background-size: max-width;
     border-bottom: 1mm;
     border-color: orangered;
     background-image: linear-gradient(to bottom,rgba(5,5,5,0), rgba(5,5,5,0.5));
