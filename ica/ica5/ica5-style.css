@@ -42,6 +42,10 @@
   }
   
   /* Your CSS below here */
+  div
+  {
+    display: block;
+  }
 #imgTop 
 {
     background-image: url(top-image.png);
