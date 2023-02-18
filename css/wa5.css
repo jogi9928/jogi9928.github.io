@@ -18,8 +18,8 @@ html, body
 {
     position: fixed;
     bottom:50px;
-    right: 50%;
     display: flex;
+    right: 35%;
     height: 50px;
     line-height: 0px;
     border: 2px solid white;
