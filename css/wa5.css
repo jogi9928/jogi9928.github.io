@@ -5,6 +5,8 @@ html, body
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family:cursive;
+    
 }
 #MyBackground
 {
@@ -16,40 +18,61 @@ html, body
 {
     position: fixed;
     bottom:50px;
+    right: 38%;
+    display: flex;
+    height: 50px;
+    line-height: 0px;
+    border: 2px solid white;
 }
 #overlay1 div
 {
-    display: flex;
     flex: 1 auto;
-    margin: 5px;
+    border-color: white;
     font-size: 25px;
 }
 
 #overlay2
 {
     position: fixed;
-    top:50px;
-    right:-500px;
+    top: 5%;
+    left: 85%;
 }
 #overlay2 img
 {
-    max-width: 25%;
-    max-height: 25%;
+    width: 90%;
 }
 #score1
 {
-    background-color: red;
-    color:black;
+    background-color: rgba(227, 24, 55);
+    color:rgba(5,5,5);
+    width:80px;
+    text-align: center;
+    border: 2px solid white;
 }
 #score2
 {
-    background-color: green;
-    color:black;
+    background-color: rgba(0, 76, 84);
+    color:rgba(5,5,5);
+    width:100px;
+    text-align: center;
+    border: 2px solid white;
 }
 #time
 {
     background-color: rgba(5,5,5);
     color: white;
+    width:120px;
+    text-align: center;
+    border: 2px solid white;
 }
+#place
+{
+    background-color: rgba(5,5,5);
+    color: white;
+    width:130px;
+    text-align: center;
+    border: 2px solid white;
+}
+
 
 
