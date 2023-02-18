@@ -1,7 +1,7 @@
 # jogi9928.github.io
 
 ## Projects
-- HTML
+- [HTML](html-midterm/page1.html)
 - CSS
 - JS
 
