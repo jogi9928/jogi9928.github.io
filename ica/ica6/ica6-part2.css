@@ -6,6 +6,7 @@ body{
 #flex-parent{
     display:flex;
     background-color: orangered;
+    flex-direction: row;
 }
 #flex-parent p{
     padding:5vw;
@@ -21,7 +22,9 @@ body{
     background-color: grey;
     padding:3vw 5vh;
     margin:5vw;
-    
+    max-width: 50px;
+    text-align: center;
+    font-size: 45px;
 }
 #no0{
     grid-row:4;
@@ -62,4 +65,20 @@ body{
 #no9{
     grid-row:3;
     grid-column: 3;
+}
+#flex-child1
+{
+    order: 3;
+}
+#flex-child2
+{
+    order: 4;
+}
+#flex-child3
+{
+    order: 2;
+}
+#flex-child4
+{
+    order: 1;
 }
