@@ -1,0 +1,65 @@
+body{
+    background-color: olive;
+}
+
+
+#flex-parent{
+    display:flex;
+    background-color: orangered;
+}
+#flex-parent p{
+    padding:5vw;
+}
+
+
+#grid-parent{
+    display:grid;
+    gap:10px;
+}
+
+#grid-parent h1{
+    background-color: grey;
+    padding:3vw 5vh;
+    margin:5vw;
+    
+}
+#no0{
+    grid-row:4;
+    grid-column:2;
+}
+#no1{
+    grid-row:1;
+    grid-column: 1;
+}
+#no2{
+    grid-row:1;
+    grid-column: 2;
+}
+#no3{
+    grid-row:1;
+    grid-column: 3;
+}
+#no4{
+    grid-row:2;
+    grid-column: 1;
+}
+#no5{
+    grid-row:2;
+    grid-column: 2;
+}
+#no6{
+    grid-row:2;
+    grid-column: 3;
+}
+#no7{
+    grid-row:3;
+    grid-column: 1;
+}
+#no8{
+    grid-row:3;
+    grid-column: 2;
+}
+#no9{
+    grid-row:3;
+    grid-column: 3;
+}
