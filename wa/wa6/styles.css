@@ -64,7 +64,7 @@ body {
   .feature {
       width: 200px;
   }
-@media only screen and (max-width:550px) /*media only deals with screen*/
+@media only screen and (max-width:500px) /*media only deals with screen*/
 {
     nav ul
     {
@@ -72,8 +72,8 @@ body {
     }
     .grid
     {
-      display: block;
-      justify-content: center;
+      display: flex;
+      flex-flow:column;
     }
 }
 article
