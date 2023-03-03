@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: deepskyblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: navy;
+    transition: height 1s, background-color 1s;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+h1
+{
+    color: navy;
+}
+#red-ball{
+    background-color: indigo;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    position:absolute;
+    left:0;
+    top:0;
+    animation:10s linear 0s infinite forwards moveBall;
+}
+@keyframes moveBall
+{
+    0%
+    {
+        transform:translate(2vw, 2vh);
+    }
+    12.5%
+    {
+        transform:translate(2vw, 47vh);
+    }
+    25%
+    {
+        transform:translate(2vw, 90vh);
+    }
+    37.5%
+    {
+        transform: translate(47vw, 90vh);
+    }
+    50%
+    {
+        transform: translate(95vw, 90vh);
+    }
+    62.5%
+    {
+        transform: translate(95vw, 47vh);
+    }
+    75%
+    {
+        transform: translate(95vw, 2vh);
+    }
+    87.5% 
+    {
+        transform: translate(47vw, 2vh);
+    }
+    100%
+    {
+        transform: translate(2vw, 2vh);
+    }
+}
+nav:hover
+{
+    animation-name: changeColor;
+    animation-fill-mode:forwards;
+    animation-duration:0s;
+    animation-direction:normal;
+}
+@keyframes changeColor
+{
+    0%
+    {
+        background-color: navy;
+        height: 20px;
+    }
+    100%{
+        background-color: black;
+        font-weight: bold;
+        height: 50px;
+        font-size: larger;
+        line-height:50px;
+    }
+}
+
+
