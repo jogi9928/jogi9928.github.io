@@ -73,7 +73,7 @@ nav a.current {
     background: rgb(10, 10, 10);
   }
 section{
-  display: block;
+  display:block;
   box-sizing:border-box;
 }
 section:last-child
@@ -82,9 +82,8 @@ section:last-child
 }
 section img
 {
-    right 20px;
-    top: 0;
-    max-width:5vh;
+    float:right;
+    max-width:15vh;
 
 }
 
