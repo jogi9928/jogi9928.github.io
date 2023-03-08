@@ -1,0 +1,155 @@
+/*General Setup*/
+html, body
+{
+    width: 100%;
+    margin:0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: skyblue;     
+}
+#MyBackground
+{
+    position: absolute;
+    min-height: 100vh;
+}
+/*rotating square animation*/
+#movingSquare{
+    background-color: indigo;
+    width: 20px;
+    height:20px;
+    position:absolute;
+    top:30px;
+    left:50px;
+    animation:5s linear 0s infinite forwards moveBall;
+}
+@keyframes moveBall
+{
+    0%
+    {
+        transform:rotate(0deg)
+    }
+    50%
+    {
+        transform:rotate(180deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+/*nav bar set up*/
+
+#navB
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    height:10vh;
+    width: 100vw;
+    margin:0;
+    background-color: navy;
+    position:sticky;
+    top:0;
+    align-content: center;
+}
+#navB a{
+    text-align: center;
+    line-height: 50%;
+    margin:0;
+    font-size:5vh;
+    text-decoration:none;
+    color: whitesmoke;
+    border: 5px solid rgb(10, 10, 10);
+    box-sizing: border-box;
+    width:25vw;
+    height:10vh;
+    padding-left:1.5vw;
+    padding-right:1.5vw;
+    padding-top:20px;
+    padding-bottom: 20px;
+    overflow:hidden;
+}
+
+/*Header setup*/
+section{
+    display: flex;
+  }
+  h1{
+    flex:5;
+    color:navy;
+    font-size: 3em;
+    text-align: center;
+  }
+  h1 img{
+    max-width:20px;
+    margin-left:100px;
+  }
+#Hobbies
+{
+    margin-top:1vh;
+    margin-bottom:1vh;
+    margin-right:1vw;
+    margin-left:1vw;
+    width:98vw;
+    background-color:cornflowerblue;
+}
+#Hobbytxt-pic
+{
+    display:grid;
+    gap:10px;
+}
+#Hobbytxt-pic h1
+{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin:5px;
+    text-align: center;
+    color:white;
+    border: 10px dotted rgb(15,15,15);
+    background-color: blueviolet;
+    
+}
+#Hobbies img
+{
+    max-width:20vw;
+    justify-content: center;
+    padding:25px;
+}
+#Hob1
+{
+    grid-row:1;
+    grid-column: 1;
+}
+#Hob2
+{
+    grid-row:1;
+    grid-column: 2;
+}
+#Hob3
+{
+    grid-row:2;
+    grid-column: 1;
+}
+#Hob4
+{
+    grid-row:2;
+    grid-column: 2;
+}
+#Hob5
+{
+    grid-row:3;
+    grid-column: 1;
+}
+#Hob6
+{
+    grid-row:3;
+    grid-column: 2;
+}
+
+
+ 
+
+  
+
+
+
