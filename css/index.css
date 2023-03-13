@@ -235,20 +235,47 @@ section{
     h1 
     {
         font-size: 2em;
+        margin-top: 5vh;
     }
     #Headerimg{
-        max-width:20px;
+        max-width:10px;
         margin-right:1vw;
         margin-top:1vh;
         margin-bottom:1vh;
-        max-height:35px;
         align-self: center;
       }
-    #navB
-    {
-        height:2.5vh;
-        font-size: 5vh;
-    }
+      #navB
+      {
+          display:flex;
+          flex-direction: row;
+          justify-content:space-evenly;
+          height:5vh;
+          width: 100vw;
+          margin:0;
+          background-color: navy;
+          position:sticky;
+          top:0;
+          align-content: center;
+          padding-top:20px;
+          padding-bottom: 20px;
+      }
+      #navB a{
+          text-align: center;
+          line-height: 50%;
+          margin:0;
+          font-size:2vh;
+          text-decoration:none;
+          color: whitesmoke;
+          border: 5px solid rgb(10, 10, 10);
+          box-sizing: border-box;
+          width:25vw;
+          height:5vh;
+          padding-left:1.5vw;
+          padding-right:1.5vw;
+          padding-top:20px;
+          padding-bottom: 20px;
+          overflow:hidden;
+      }
     #Bio
 {
     margin-top:1vh;
@@ -256,7 +283,7 @@ section{
     margin-right:1vw;
     margin-left:1vw;
     width:98vw;
-    background-color:blue;
+    background-color:cornflowerblue;
     display:flex;
     flex-direction: column;
 }
