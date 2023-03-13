@@ -265,6 +265,7 @@ section{
           text-decoration:none;
           color: whitesmoke;
           border: 5px solid rgb(10, 10, 10);
+          box-sizing: border-box;
           width:25vw;
           padding-left:1.5vw;
           padding-right:1.5vw;
