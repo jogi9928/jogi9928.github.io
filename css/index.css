@@ -227,6 +227,25 @@ section{
     flex-direction: row;
    
 }
+/*Styling for Iphone*/
+@media only screen and (max-width:400px)
+{
+    /*Make font smaller for header and nav*/
+    h1 
+    {
+        font-size: 2em;
+    }
+    #Headerimg{
+        max-width:1vw;
+        margin-right:25vw;
+        margin-top:1vh;
+        margin-bottom:1vh;
+        min-width:20px;
+        max-height:35px;
+        
+      }
+
+}
 
 
 
