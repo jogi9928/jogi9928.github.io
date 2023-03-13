@@ -235,7 +235,7 @@ section{
     h1 
     {
         font-size: 2em;
-        margin-top: 5vh;
+        margin-top: 10vh;
     }
     #Headerimg{
         max-width:10px;
@@ -256,10 +256,11 @@ section{
           position:sticky;
           top:0;
           align-content: center;
-          padding-top:20px;
-          padding-bottom: 20px;
+          margin-top:20px;
+          margin-bottom: 20px;
       }
       #navB a{
+        height:5vh;
           text-align: center;
           line-height: 50%;
           margin:0;
@@ -269,11 +270,8 @@ section{
           border: 5px solid rgb(10, 10, 10);
           box-sizing: border-box;
           width:25vw;
-          height:5vh;
           padding-left:1.5vw;
           padding-right:1.5vw;
-          padding-top:20px;
-          padding-bottom: 20px;
           overflow:hidden;
       }
     #Bio
