@@ -255,8 +255,6 @@ section{
           position:sticky;
           top:0;
           align-content: center;
-          margin-top:20px;
-          margin-bottom: 20px;
       }
       #navB a{
         height:5vh;
