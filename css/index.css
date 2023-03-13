@@ -84,6 +84,7 @@ section{
     margin-right:25vw;
     margin-top:1vh;
     margin-bottom:1vh;
+    min-width:100px;
   }
 #Hobbytxt-pic
 {
@@ -218,7 +219,6 @@ section{
 #Hobbies img
 {
     max-height:25vh;
-    
 }
 .photos
 {
