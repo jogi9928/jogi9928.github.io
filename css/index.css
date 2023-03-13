@@ -251,8 +251,7 @@ section{
           justify-content:space-evenly;
           height:5vh;
           width: 100vw;
-          margin:0;
-          background-color: blue;
+          background-color: navy;
           position:sticky;
           top:0;
           align-content: center;
@@ -268,7 +267,6 @@ section{
           text-decoration:none;
           color: whitesmoke;
           border: 5px solid rgb(10, 10, 10);
-          box-sizing: border-box;
           width:25vw;
           padding-left:1.5vw;
           padding-right:1.5vw;
