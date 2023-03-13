@@ -163,6 +163,7 @@ section{
     flex:1;
     flex-direction: column;
     text-align: center;
+
 }
 
 #Socials
@@ -216,14 +217,15 @@ section{
 }
 #Hobbies img
 {
-    max-height:35vh;
-    flex-direction:column;
+    max-height:25vh;
+    
 }
 .photos
 {
-    margin-top:5vh;
-    margin-bottom:5vh;
+    margin-top:1vh;
+    margin-bottom:1vh;
     flex-direction: row;
+   
 }
 
 
