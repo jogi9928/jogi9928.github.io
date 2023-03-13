@@ -261,7 +261,6 @@ section{
         height:100%;
           text-align: center;
           line-height: 50%;
-          margin:0;
           font-size:2vh;
           text-decoration:none;
           color: whitesmoke;
@@ -307,10 +306,7 @@ section{
     top:10px;
     left:5px;
 }
-    
-
 }
-
 
 
 
