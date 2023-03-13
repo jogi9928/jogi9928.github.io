@@ -78,7 +78,7 @@ section{
     color:navy;
     font-size: 3em;
     text-align: center;
-    align-content: center;
+    margin-top:10vh;
   }
   #Headerimg{
     max-width:5vw;
