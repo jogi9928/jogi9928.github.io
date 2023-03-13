@@ -237,13 +237,48 @@ section{
     }
     #Headerimg{
         max-width:1vw;
-        margin-right:25vw;
+        margin-right:1vw;
         margin-top:1vh;
         margin-bottom:1vh;
         min-width:20px;
         max-height:35px;
-        
       }
+    #navB
+    {
+        height:2.5vh;
+        font-size: 5vh;
+    }
+    #Bio
+{
+    margin-top:1vh;
+    margin-bottom:1vh;
+    margin-right:1vw;
+    margin-left:1vw;
+    width:98vw;
+    background-color:cornflowerblue;
+    display:flex;
+    flex-direction: column;
+}
+#Bio div
+{
+    flex-direction: column;
+    padding-left:1vw;
+    padding-right:1vw;
+    border: 5px solid rgb(15,15,15);
+}
+#Hobbies
+{
+    margin-top:1vh;
+    margin-bottom:1vh;
+    margin-right:1vw;
+    margin-left:1vw;
+    width:98vw;
+    background-color:cornflowerblue;
+    border: 5px solid rgb(15,15,15);
+    display:flex;
+    flex-direction: column;
+}
+    
 
 }
 
