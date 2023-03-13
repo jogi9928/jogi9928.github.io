@@ -79,9 +79,11 @@ section{
     font-size: 3em;
     text-align: center;
   }
-  h1 img{
-    max-width:20px;
-    margin-left:100px;
+  #Headerimg{
+    max-width:5vw;
+    margin-right:25vw;
+    margin-top:1vh;
+    margin-bottom:1vh;
   }
 #Hobbytxt-pic
 {
@@ -112,12 +114,6 @@ section{
     border: 10px dotted rgb(15,15,15);
     background-color: blueviolet;
     
-}
-#Hobbies img
-{
-    max-width:20vw;
-    justify-content: center;
-    padding:25px;
 }
 #Hobbyhead
 {
@@ -223,7 +219,11 @@ section{
 {
     text-align: center;
 }
-
+#Hobbies img
+{
+    max-height:25vh;
+    align-content:space-around;
+}
   
 
 
