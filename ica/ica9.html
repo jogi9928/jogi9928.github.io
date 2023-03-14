@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <style>
+        #button
+        {
+            border: 5px solid darkorchid;
+            background-color:orchid;
+            border-radius: 20px;
+            padding: 25px 50px;
+            width: 250px;
+        }
+        p
+        {
+            font-size: 50px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="button">
+        <p>Click me!</p>
+    </div>
+    <script>
+        console.log("Hello, World!");
+        let button = document.querySelector("#id");
+
+        function changeBtn()
+        {
+            console.lot("This worked!");
+        }
+        button.addEventListener('click', changeBtn);
+    </script>
+  </body>
+</html>
