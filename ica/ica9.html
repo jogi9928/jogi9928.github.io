@@ -17,21 +17,66 @@
         {
             font-size: 50px;
         }
+        #addTxt
+        {
+            border: 5px solid darkcyan;
+            background-color:aqua;
+            padding: 25px 50px;
+            width: 400px;
+        }
     </style>
   </head>
   <body>
     <div id="button">
-        <p>Click me!</p>
+        <p>Click me!</p> 
+    </div>
+    <div id="form">
+        <label for="guessField">Enter a guess: </label>
+        <input type="number" min="1" max="100" required id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+    <div id="addTxt">
+        <p>I am Text!</p>
+        <input type="string"  required id="Subtxt" class="Subtxt">
+        <input type="submit" value="Submit txt" class="txtsubmit">
     </div>
     <script>
         console.log("Hello, World!");
-        let button = document.querySelector("#id");
+        let btn = document.querySelector("#button");
 
         function changeBtn()
         {
-            console.lot("This worked!");
+        // console.log("this worked!");
+           btn.textContent = "TEST";  
+           btn.style.backgroundColor = "black";
+           btn.style.color = "white";
+           btn.style.border = "2px solid aqua";
         }
         button.addEventListener('click', changeBtn);
+
+        function checkGuess()
+        {
+            let value = userGuess.value * 2;
+            alert(value);
+        }
+        let guessBtn = document.querySelector(".guessSubmit");
+        let userGuess = document.querySelector(".guessField");
+        // console.log(guessBtn);
+        guessBtn.addEventListener('click', checkGuess);
+
+        
+       
+        function changeTxt()
+        {
+            addTxt.textContent = txt.value;
+        }
+        let guesstxt = document.querySelector(".txtsubmit");
+        let txt = document.querySelector(".Subtxt");
+        guesstxt.addEventListener('click', changeTxt);
+        
+
+
+
     </script>
   </body>
 </html>
