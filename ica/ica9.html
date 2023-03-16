@@ -1,10 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
     <meta charset="utf-8">
     <title>Document</title>
     <style>
+        html
+        {
+            font-size: 16px;
+        }
         #button
         {
             border: 5px solid darkorchid;
@@ -24,9 +28,48 @@
             padding: 25px 50px;
             width: 400px;
         }
+        #calc
+        {
+            margin-top: 5vh;
+            margin-bottom:1vh;
+            margin-left:20vw;
+            width: 60vw;
+            background-color:azure;
+            padding:1vw 1vh;
+            text-align: center;
+            box-sizing: border-box;
+            border:10px solid rgb(15, 15, 15);
+        }
+        #calc h1
+        {
+            color: rgb(15, 15, 15);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size:2em;
+            padding-bottom:3vh;
+        }
+        #calc p
+        {
+            color: rgb(15, 15, 15);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size:medium;
+            font-size:1em;
+        }
+
     </style>
   </head>
   <body>
+    <div id="calc">
+        <h1>Hypotenuse Calculator.</h1>
+            <p>Enter sides below</p>
+                <input type="number" min="0.01" required id="side1" class="side1">
+
+                <input type="number" min="0.01" required id="side2" class="side2">
+                <input type="submit" value="Submit" class="sideSub">
+                <p>Answer: </p>
+                <p id="ans"> </p>
+    </div>
     <div id="button">
         <p>Click me!</p> 
     </div>
@@ -36,10 +79,11 @@
         <input type="submit" value="Submit guess" class="guessSubmit">
     </div>
     <div id="addTxt">
-        <p>I am Text!</p>
-        <input type="string"  required id="Subtxt" class="Subtxt">
+        <p>Enter text below!</p>
+        <input type="text"  required id="Subtxt" class="txt">
         <input type="submit" value="Submit txt" class="txtsubmit">
     </div>
+        
     <script>
         console.log("Hello, World!");
         let btn = document.querySelector("#button");
@@ -64,15 +108,31 @@
         // console.log(guessBtn);
         guessBtn.addEventListener('click', checkGuess);
 
-        
-       
         function changeTxt()
         {
-            addTxt.textContent = txt.value;
+            addTxt.textContent = wordSub.value;
+        }  
+        let wordSub = document.querySelector(".txt"); 
+        let word = document.querySelector(".txtsubmit");
+
+        word.addEventListener('click', changeTxt);
+
+        // for calculator
+        function hypCalc()
+        {
+            let side1Sq = side1.value**2;
+            let side2Sq = side2.value**2;
+            let hyp = side1Sq + side2Sq;
+            hyp = hyp**0.5;
+            alert(hyp);
         }
-        let guesstxt = document.querySelector(".txtsubmit");
-        let txt = document.querySelector(".Subtxt");
-        guesstxt.addEventListener('click', changeTxt);
+        let side1 = document.querySelector(".side1");
+        let side2 = document.querySelector(".side2");
+
+        let sub = document.querySelector(".sideSub");
+
+        sub.addEventListener('click', hypCalc);
+
         
 
 
