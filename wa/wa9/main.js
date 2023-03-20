@@ -7,31 +7,37 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
-const insertx = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
-const inserty = ["the soup kitchen", "Disneyland", "the White House"];
-const insertz = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
+const storyText = 'One :insertx: day, Jack left for work at :inserty:, wearing only a sweatshirt. It was 30 fahrenheit outside, and on their walk, they :insertz:. Jack was later hospitalized exposure to the cold. The doctors said, since Jack only weighs 95 pounds, they must wear a bigger jacket in the cold.';
+const insertx = ['rainy', 'stormy', 'grim'];
+const inserty = ['The C4C', 'Narnia', 'D.P. Dough'];
+const insertz = ['fell into a puddle', 'got buried in snow', 'got stuck in a terrible storm'];
 
 randomize.addEventListener('click', result);
 
 function result() {
 
-    let newStory = storyText.value;
+    let newStory = storyText;
     let xItem = randomValueFromArray(insertx);
     let yItem = randomValueFromArray(inserty);
     let zItem = randomValueFromArray(insertz);
+    newStory = newStory.replace(':insertx:', xItem);
+    newStory = newStory.replace(':inserty:', yItem);
+    newStory = newStory.replace(':insertz:', zItem);
     
   if(customName.value !== '') {
     const name = customName.value;
-
+    newStory = newStory.replace('Jack', name);
+    newStory = newStory.replace('Jack', name);
+    newStory = newStory.replace('Jack', name);
   }
 
-  if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
-
+  if(document.getElementById('uk').checked) {
+    const weight = Math.round(95/14) + ' stone';
+    const temperature =  Math.round((30-32)*5/9) + ' centigrade';
+    newStory = newStory.replace('95 pounds', weight);
+    newStory = newStory.replace('30 fahrenheit', temperature);
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }

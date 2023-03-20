@@ -9,10 +9,22 @@
 
     <style>
 
-    body {
-      font-family: helvetica, sans-serif;
-      width: 350px;
-    }
+html, body
+{
+    width: 100%;
+    margin:0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: skyblue;     
+}
+body
+{
+  margin-top: 10px;
+}
+#MyBackground
+{
+    position: absolute;
+    min-height: 100vh;
+}
 
     label {
       font-weight: bold;  
@@ -20,6 +32,9 @@
 
     div {
       padding-bottom: 20px;
+      color:navy;
+      font-size: 1.5em;
+      text-align: center;
     }
 
     input[type="text"] {
@@ -28,10 +43,13 @@
     }
 
     p {
-      background: #FFC125;
-      color: #5E2612;
-      padding: 10px;
-      visibility: hidden;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 30px;
+      margin:10px;
+      text-align: center;
+      color:white;
+      border: 10px solid rgb(15,15,15);
+      background-color: navy;
     }
 
     </style>
@@ -53,6 +71,6 @@
     <p class="story"></p>
     
 
-    
+    <script src="main.js"></script>
   </body>
 </html>
