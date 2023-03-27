@@ -1,12 +1,18 @@
-html, body
+html
+{
+  width:100vw;
+  height:100vh;
+}
+body
 {
     margin:0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: skyblue;    
-    width: 640px;
+    width: 700px;
     margin: 0 auto;
     height:100vh;
 }
+
 
 h1 {
   color:navy;
