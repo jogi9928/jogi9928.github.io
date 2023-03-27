@@ -5,10 +5,10 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const allImages = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+const allImages = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.png'];
 
 /* Declaring the alternative text for each image file */
-const altTxt = ['Closeup of a human eye', 'pic2txt', 'pic3txt', 'pic4txt', 'pic5txt'];
+const altTxt = ['Man skiing in forest', 'Skier skiing steep powder', 'Two skiers skiing together', 'Man skiing deep powder', 'Skier skiing on groomer'];
 /* Looping through images */
 
 

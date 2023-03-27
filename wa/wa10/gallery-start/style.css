@@ -1,32 +1,40 @@
+html, body
+{
+    margin:0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: skyblue;    
+    width: 640px;
+    margin: 0 auto;
+    height:100vh;
+}
+
 h1 {
-  font-family: helvetica, arial, sans-serif;
+  color:navy;
+  font-size: 3em;
   text-align: center;
 }
 
-body {
-  width: 640px;
-  margin: 0 auto;
-}
 
 .full-img {
   position: relative;
   display: block;
-  width: 640px;
+  width: 700px;
   height: 480px;
+  overflow:hidden;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 640px;
+  width: 100%;
   height: 480px;
   background-color: rgba(0,0,0,0);
 }
 
 button {
   border: 0;
-  background: rgba(150,150,150,0.6);
+  background: white;
   text-shadow: 1px 1px 1px white;
   border: 1px solid #999;
   position: absolute;
@@ -34,10 +42,14 @@ button {
   top: 2px;
   left: 2px;
 }
+.thumb-bar 
+{
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+}
 
 .thumb-bar img {
-  display: block;
-  width: 20%;
-  float: left;
+  width:20%;
   cursor: pointer;
 }
