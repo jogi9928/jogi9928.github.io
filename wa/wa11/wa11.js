@@ -1,7 +1,7 @@
 const btn = document.querySelector('#js-new-quote');
 btn.addEventListener('click', getQuote);
 
-const endpoint = 'https://the-trivia-api.com/api/questions?limit=5&difficulty=easy';
+const endpoint = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en';
 
 let answerQ = '';
 const answerButton = document.querySelector('#js-tweet');
@@ -17,8 +17,8 @@ async function getQuote()
         }
         const json = await response.json();
         console.log(json);
-        displayQuote(json.question);
-        answerQ = json.answer;
+        displayQuote(json.quoteText);
+        answerQ = json.quoteAuthor;
         const answerText = document.querySelector('#js-answer-text');
         answerText.textContent = '';
         
@@ -26,7 +26,7 @@ async function getQuote()
     catch(err)
     {
         console.log(err);
-        alert('Failed to fetch new trivia');
+        alert('Failed to fetch new quote');
     }
 }
 
