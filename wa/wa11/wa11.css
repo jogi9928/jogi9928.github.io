@@ -113,6 +113,11 @@ header
     box-sizing: border-box;
     width:50vw;
   }
+  .quote-text
+  {
+    text-align: center;
+  
+  }
   @media screen and (max-width: 600px) {
     .app {
       width: 100%;

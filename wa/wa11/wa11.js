@@ -1,7 +1,6 @@
 const btn = document.querySelector('#js-new-quote');
 btn.addEventListener('click', getQuote);
-// Access-Control-Allow-Origin;
-const endpoint = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en';
+const endpoint = 'https://meowfacts.herokuapp.com';
 
 let answerQ = '';
 const answerButton = document.querySelector('#js-tweet');
@@ -17,10 +16,8 @@ async function getQuote()
         }
         const json = await response.json();
         console.log(json);
-        displayQuote(json.quoteText);
-        answerQ = json.quoteAuthor;
+        displayQuote(json.data);
         const answerText = document.querySelector('#js-answer-text');
-        answerText.textContent = '';
         
     }
     catch(err)
