@@ -27,7 +27,7 @@ class Ball
         this.color = color;
         this.size = size;
     }
-}
+
 draw()
 {
     ctx.beginPath();
@@ -35,3 +35,77 @@ draw()
     ctx.arc(this.x, this.y, this.size, 0, 2*Math.PI);
     ctx.fill();
 }
+update()
+{
+    if((this.x - this.size)>=width)
+    {
+        this.velX = -(this.velX);
+    }
+    if((this.y - this.size)>=height)
+    {
+        this.velY = -(this.velY);
+    }
+    
+    if((this.x - this.size)<=0)
+    {
+        this.velX = -(this.velX);
+    }
+    if((this.y - this.size)<=0)
+    {
+        this.velY = -(this.velY);
+    }
+    this.x = this.x + this.velX;
+    this.y = this.y + this.velY;
+    
+}
+collisionDetect()
+    {
+        for(const ball of balls)
+        {
+            if(this !== ball)
+            {
+                const dx = this.x - ball.x;
+                const dy = this.y - ball.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                if(distance < this.size + ball.size)
+                {
+                    ball.color = this.color = randomRGB();
+                }
+            }
+        }
+    }
+
+
+}
+const balls = [];
+while(balls.length < 20)
+{
+    const size = random(10,20);
+    const ball = new Ball(
+        random(0 + size, width - size),
+        random(0 + size, height - size),
+        random(-5, 5),
+        random(-5, 5),
+        randomRGB(),
+        size
+    );
+    balls.push(ball);
+}
+function loop()
+{
+    ctx.fillStyle = "rgba(0,0,0,0.25)";
+    ctx.fillRect(0,0,width,height);
+    for(const ball of balls)
+    {
+        ball.draw();
+        ball.update();
+        ball.collisionDetect();
+        //ball.collisionDetect();
+    }
+    requestAnimationFrame(loop);
+}
+loop();
+
+
+// const testBall = new Ball(100, 100, 2, 2, "red", 10);
+// testBall.draw();
