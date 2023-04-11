@@ -118,6 +118,11 @@ header
     text-align: center;
   
   }
+  .answer-text
+  {
+    text-align: center;
+    font-size: 15px;
+  }
   @media screen and (max-width: 600px) {
     .app {
       width: 100%;
