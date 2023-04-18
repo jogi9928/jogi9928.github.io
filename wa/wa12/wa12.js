@@ -25,7 +25,7 @@ let totalSal = company1.employees[0].salary + company1.employees[1].salary + com
 console.log('Sum of all employee salaries: ' + totalSal);
 
  // Problem 5
-for(let i=0; i<3; i++)
+for(let i=0; i<4; i++)
 {
     if(company1.employees[i].raise_eligible == 'true')
     {
@@ -42,19 +42,17 @@ console.log(newComp);
 // let newTotal = company1.employees[0].salary + company1.employees[1].salary + company1.employees[2].salary + company1.employees[3].salary;
 // console.log('Sum of all employee salaries after raises: ' + newTotal);
 
- // Problem 6
- const trueF = {wfh: 'true'};
- const Falset = {wfh: 'false'};
-for(let j=0; j<3; j++)
+ // Problem 6 
+for(let j=0; j<4; j++)
 {
     if(company1.employees[j].first_name == 'Anna' || company1.employees[j].first_name == 'Sam')
     {
 
-        company1.employees[j].push(trueF);
+        company1.employees[j]['wfh'] = true;
     }
     else
     {
-        company1.employees[j].push(Falset);
+        company1.employees[j]['wfh'] = false;
     }
 }
 const WFHcomp = JSON.stringify(company1);
