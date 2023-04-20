@@ -1,0 +1,51 @@
+html, body
+{
+    width: 100%;
+    margin:0;
+    padding:0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+}
+.XY-plane
+{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    margin:0;
+    padding:0;
+    border:0;
+    cursor: pointer;
+    
+}
+
+button {
+    border: 0;
+    background: white;
+    text-shadow: 1px 1px 1px white;
+    border: 1px solid #999;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+.max
+{
+    top:0;
+    left:450px;
+    text-align: center;
+    font-size: 15px;
+}
+.min
+{
+    top:450px;
+    left:0;
+    text-align: center;
+    font-size: 15px;
+}
+p
+{
+    text-align: center;
+    font-size:25px;
+    line-height: 250px;
+
+}
