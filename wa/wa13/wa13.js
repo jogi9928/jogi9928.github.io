@@ -6,6 +6,14 @@ function graph()
 {
     graphOutput.textContent = graphG;
 }
+function max()
+{
+    alert(100);
+}
+function min()
+{
+    alert(0);
+}
 function posClick(event)
 {
     console.log(event.clientX);
@@ -17,6 +25,14 @@ function posClick(event)
         {
             graphG=100;
         }
+        else if(graphG<0)
+        {
+            graphG=0;
+        }
+        else if(event.clientX<0 || event.clientY<0)
+        {
+            graphG=0;
+        }
     console.log(graphG);
 }
 
@@ -24,6 +40,8 @@ var graphG = document.querySelector('.XY-plane').addEventListener('click', posCl
 var graphOutput = document.querySelector('.graph-output');
 
 const submitButton = document.querySelector('.submit-button').addEventListener('click', graph);
+const maxVButton = document.querySelector('.max').addEventListener('click', max);
+const minVButton = document.querySelector('.min').addEventListener('click', min);
 
 
 const output = document.querySelector('.output');
