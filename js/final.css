@@ -9,5 +9,97 @@ html, body
 {
     height: 80vh;
     width: 80vw;
+    border: 1vh solid rgb(10, 10, 10);
+    margin-left:10%;
+}
+
+#grid-parent{
+    height:65vh;
+    display:grid;
+    border-bottom: 1vh solid rgb(10, 10, 10);
+    grid-template-rows: 13vh 13vh 13vh 13vh 13vh;
+    grid-template-columns: 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw;
+    gap:0;
+    padding-top:1.5vh;
+    padding-bottom:1.5vh;
+    padding-left:1vw;
+    padding-right:1vw;
+}
+#grid-parent h2
+{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+#menu-bar
+{
+    height: 11vh;
+    display:flex;
+    background-color: whitesmoke;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#menu-bar p
+{
+    padding: 5px;
+    font-size:2em;
+}
+#no1{
+    grid-row:5;
+    grid-column: 1;
+    border: 5px solid rgb(10, 10, 10);
+    border-right:none;
+}
+#no2{
+    grid-row:5;
+    grid-column: 2;
+    border: 5px solid rgb(10, 10, 10);
+    
+}
+#no3{
+    grid-row:4;
+    grid-column: 2;
+    border: 5px solid rgb(10, 10, 10);
+    border-bottom:none;
+}
+#no4{
+    grid-row:3;
+    grid-column: 2;
+    border: 5px solid rgb(10, 10, 10);
+    border-bottom:none;
+    border-top:2.5px solid rgb(10, 10, 10);
+}
+#no5{
+    grid-row:2;
+    grid-column: 2;
+    border: 5px solid rgb(10, 10, 10);
+    border-top:none;
+    border-bottom:2.5px solid rgb(10, 10, 10);
+}
+#no6{
+    grid-row:1;
+    grid-column: 2;
     border: 5px solid rgb(10, 10, 10);
 }
+#no7{
+    grid-row:1;
+    grid-column: 3;
+    border: 5px solid rgb(10, 10, 10);
+    border-left:none;
+    border-right: 2.5px solid rgb(10, 10, 10);
+}
+#no8{
+    grid-row:1;
+    grid-column: 4;
+    border: 5px solid rgb(10, 10, 10);
+    border-left: 2.5px solid rgb(10, 10, 10);
+    border-right:none;
+}
+#no9{
+    grid-row:1;
+    grid-column: 5;
+    border: 5px solid rgb(10, 10, 10);
+}
+
+
