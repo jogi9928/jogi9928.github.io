@@ -50,12 +50,13 @@ html, body
     grid-column: 1;
     border: 5px solid rgb(10, 10, 10);
     border-right:none;
+    line-height:11vh;
+    
 }
 #no2{
     grid-row:5;
     grid-column: 2;
     border: 5px solid rgb(10, 10, 10);
-    
 }
 #no3{
     grid-row:4;
