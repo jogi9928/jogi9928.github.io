@@ -1,0 +1,5 @@
+inspiration for die animation
+https://icodemag.com/3d-rolling-dice-css-javascript/
+
+background image:
+https://i.pinimg.com/originals/b4/2b/ad/b42badff8069acf080b4b57857670e8c.jpg
