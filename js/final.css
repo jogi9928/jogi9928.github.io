@@ -14,11 +14,6 @@ html, body
     border: 1vh solid rgb(10, 10, 10);
     margin-left:10%;
 }
-#MyBackground
-{
-    height: 65vh;
-    width:80vw;
-}
 #grid-parent{
     height:65vh;
     display:grid;
@@ -26,10 +21,13 @@ html, body
     grid-template-rows: 13vh 13vh 13vh 13vh 13vh;
     grid-template-columns: 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw 7.8vw;
     gap:0;
-    /*padding-top:1.5vh;
+    background-image: url('../img/spaceBackground1.jpg');
+    background-size: cover;
+    background-position-y: -20vh;
+    padding-top:1.5vh;
     padding-bottom:1.5vh;
     padding-left:1vw;
-    padding-right:1vw;*/
+    padding-right:1vw;
 }
 #grid-parent h2
 {
@@ -46,12 +44,12 @@ html, body
     background-color: whitesmoke;
 }
 #no1{
-    padding-left:1vw;
     grid-row:5;
     grid-column: 1;
     border: 5px solid rgb(10, 10, 10);
     border-right:none;
     line-height:11vh;
+
 }
 #no2{
     grid-row:5;
