@@ -1,3 +1,4 @@
+/* general setup */
 html, body
 {
     width: 100%;
@@ -5,6 +6,7 @@ html, body
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: skyblue;     
 }
+/*create gameboard */
 #gameBoard
 {
     height: 80vh;
@@ -30,20 +32,6 @@ html, body
     margin:0;
     padding:0;
     text-align: center;
-}
-#menu-bar
-{
-    height: 11vh;
-    display:flex;
-    background-color: whitesmoke;
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items: center;
-}
-#menu-bar p
-{
-    padding: 5px;
-    font-size:2em;
 }
 #no1{
     grid-row:5;
@@ -102,5 +90,283 @@ html, body
     grid-column: 5;
     border: 5px solid rgb(10, 10, 10);
 }
+#no10{
+    grid-row:2;
+    grid-column: 5;
+    border: 5px solid rgb(10, 10, 10);
+    border-top:none;
+    border-bottom:none;
+}
+#no11{
+    grid-row:3;
+    grid-column: 5;
+    border: 5px solid rgb(10, 10, 10);
+}
+#no12{
+    grid-row:3;
+    grid-column: 6;
+    border: 5px solid rgb(10, 10, 10);
+    border-left:none;
+    border-right:none;
+}
+#no13{
+    grid-row:3;
+    grid-column: 7;
+    border: 5px solid rgb(10, 10, 10);
+}
+#no14{
+    grid-row:2;
+    grid-column: 7;
+    border: 5px solid rgb(10, 10, 10);
+    border-bottom:none;
+    border-top:none;
+}
+#no15{
+    grid-row:1;
+    grid-column: 7;
+    border: 5px solid rgb(10, 10, 10);
+}
+#no16{
+    grid-row:1;
+    grid-column: 8;
+    border: 5px solid rgb(10, 10, 10);
+    border-left:none;
+    border-right:none;
+}
+#no17{
+    grid-row:1;
+    grid-column: 9;
+    border: 5px solid rgb(10, 10, 10);
+}
+#no18{
+    grid-row:2;
+    grid-column: 9;
+    border: 5px solid rgb(10, 10, 10);
+    border-bottom: 2.5px solid rgb(10, 10, 10);
+    border-top:none;
+}
+#no19{
+    grid-row:3;
+    grid-column: 9;
+    border: 5px solid rgb(10, 10, 10);
+    border-bottom:none;
+    border-top: 2.5px solid rgb(10, 10, 10);
+}
+#no20{
+    grid-row:4;
+    grid-column: 9;
+    border: 5px solid rgb(10, 10, 10);
+}
+#no21{
+    grid-row:4;
+    grid-column: 10;
+    border: 5px solid rgb(10, 10, 10);
+    border-left:none;
+}
+/* game board 2 */
+#N1{
+    grid-row:5;
+    grid-column: 1;
+    border: 5px solid rgb(10, 10, 10);
+}
+#N2{
+    grid-row:5;
+    grid-column: 2;
+    border: 5px solid rgb(10, 10, 10);
+}
+#N3{
+    grid-row:4;
+    grid-column: 2;
+    border: 5px solid rgb(10, 10, 10);
 
+}
+#N4{
+    grid-row:3;
+    grid-column: 2;
+    border: 5px solid rgb(10, 10, 10);
+  
+}
+#N5{
+    grid-row:2;
+    grid-column: 2;
+    border: 5px solid rgb(10, 10, 10);
+
+}
+#N6{
+    grid-row:1;
+    grid-column: 2;
+    border: 5px solid rgb(10, 10, 10);
+}
+#N7{
+    grid-row:1;
+    grid-column: 3;
+    border: 5px solid rgb(10, 10, 10);
+
+}
+#N8{
+    grid-row:1;
+    grid-column: 4;
+    border: 5px solid rgb(10, 10, 10);
+    
+}
+#N9{
+    grid-row:1;
+    grid-column: 5;
+    border: 5px solid rgb(10, 10, 10);
+}
+#N10{
+    grid-row:2;
+    grid-column: 5;
+    border: 5px solid rgb(10, 10, 10);
+   
+}
+#N11{
+    grid-row:3;
+    grid-column: 5;
+    border: 5px solid rgb(10, 10, 10);
+}
+#N12{
+    grid-row:3;
+    grid-column: 6;
+    border: 5px solid rgb(10, 10, 10);
+    
+}
+#N13{
+    grid-row:3;
+    grid-column: 7;
+    border: 5px solid rgb(10, 10, 10);
+}
+#N14{
+    grid-row:2;
+    grid-column: 7;
+    border: 5px solid rgb(10, 10, 10);
+  
+}
+#N15{
+    grid-row:1;
+    grid-column: 7;
+    border: 5px solid rgb(10, 10, 10);
+}
+#N16{
+    grid-row:1;
+    grid-column: 8;
+    border: 5px solid rgb(10, 10, 10);
+    
+}
+#N17{
+    grid-row:1;
+    grid-column: 9;
+    border: 5px solid rgb(10, 10, 10);
+}
+#N18{
+    grid-row:2;
+    grid-column: 9;
+    border: 5px solid rgb(10, 10, 10);
+   
+}
+#N19{
+    grid-row:3;
+    grid-column: 9;
+    border: 5px solid rgb(10, 10, 10);
+   
+}
+#N20{
+    grid-row:4;
+    grid-column: 9;
+    border: 5px solid rgb(10, 10, 10);
+}
+#N21{
+    grid-row:4;
+    grid-column: 10;
+    border: 5px solid rgb(10, 10, 10);
+    
+}
+/* roll dice animation and creation of die */
+/* first set up menu bar */
+#menu-bar
+{
+    height: 11.1vh;
+    display:flex;
+    background-color: rgb(39, 16, 123);
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#menu-bar p
+{
+    padding: 5px;
+    font-size:2em;
+    color: whitesmoke;
+    
+}
+.die {
+    width: 7vh;
+    height: 7vh;
+    margin: .7vh;
+    perspective:42vh;
+    box-sizing: border-box;
+  }
+/* create die to be rolled */
+.die-roll {
+    box-sizing: border-box;
+    width: 7vh;
+    height: 7vh;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-3.5vh);
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+/* make die rolling animation classes */
+
+.die-roll.face-1 { transform: rotateY(0deg); }
+.die-roll.face-2 { transform: rotateY(-180deg); } 
+.die-roll.face-3 { transform: rotateY(-90deg); }
+.die-roll.face-4 { transform: rotateY(90deg); }
+.die-roll.face-5 { transform: rotateX(-90deg); }
+.die-roll.face-6 { transform: rotateX(90deg); }
+
+
+.cube {
+    box-sizing: border-box;
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    border: 2px solid rgb(10, 10, 10);
+    line-height: 7vh;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+    text-align: center;
+}
+/* create each face for rolling die and their animation */
+.face1 { background: whitesmoke; transform: rotateY(0deg) translateZ(3.5vh); }
+.face2 { background: whitesmoke; transform: rotateY(180deg) translateZ(3.5vh); } 
+.face3 { background: whitesmoke; transform: rotateY(90deg) translateZ(3.5vh); }
+.face4 { background: whitesmoke; transform: rotateY(-90deg) translateZ(3.5vh); }
+.face5 { background: whitesmoke; transform: rotateX(90deg) translateZ(3.5vh); }
+.face6 { background: whitesmoke; transform: rotateX(-90deg) translateZ(3.5vh); }
+
+.face1.changeColor,
+.face2.changeColor,
+.face3.changeColor,
+.face4.changeColor,
+.face5.changeColor,
+.face6.changeColor
+{
+    animation-name: change;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change {
+    50% {background-color: rgb(10, 10, 10);}
+}
+
+
+
+label { margin-right: .35vh; }
+
+  
 
