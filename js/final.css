@@ -173,6 +173,59 @@ html, body
     border: 5px solid rgb(10, 10, 10);
     border-left:none;
 }
+/* Styling for spaceship */
+.spaceCraft
+{
+    height: 10vh;
+    transform: translateX(1.25vw) translateY(53.5vh) rotate(45deg);
+}
+.spaceCraft.rotateLeft
+{
+    animation-name: rotateL;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.spaceCraft.rotateRight
+{
+    animation-name: rotateR;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes rotateL {
+    100% { transform: rotate(-90deg); }
+}
+@keyframes rotateR {
+    100% { transform: rotate(90deg); }
+}
+.spaceCraft.moveRight
+{
+    animation-name: moveUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.spaceCraft.moveUp
+{
+    animation-name: moveDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.spaceCraft.moveDown
+{
+    animation-name: moveRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes moveUp {
+    100% { transform: translateY(-13vh); }
+}
+@keyframes moveDown {
+    100% { transform: translateY(13vh); }
+}
+@keyframes moveRight {
+    100% { transform: translateX(7.8vw); }
+}
+/* make classes for rotation and translation as ship moves through the board */
+
 /* roll dice animation and creation of die */
 /* first set up menu bar */
 #menu-bar
