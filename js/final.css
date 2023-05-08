@@ -179,10 +179,11 @@ html, body
     position: relative;
     height: 10vh;
     transform: translateX(1.25vw) translateY(53.5vh) rotate(45deg);
-    transition: left 0.5s, top 0.5s;
+    transition-duration: 1s;
     left:0;
     top:0;
 }
+
 
 /* make classes for rotation and translation as ship moves through the board */
 
