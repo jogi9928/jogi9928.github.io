@@ -10,9 +10,9 @@
     <script defer src="./js/final.js"></script>
 </head>
 <body>
-    <h1>Let's go on a Space Adventure!</h1>
+    <!--<h1>Let's go on a Space Adventure!</h1>
         <p>A trivia based boardgame.</p>
-        <p>Click on the die to Roll.</p>
+        <p>Click on the die to Roll.</p>-->
     <section class="gameBoard">
         <div class="grid-parent">
             <h2 id="no1">Start</h2>
@@ -53,8 +53,21 @@
         </div>
     </section>
     <section class="triviaGame">
-        <h1>this is the trivia game</h1>
-            <button>Click Me!</button>
+        <div id="box">
+            <div id="Qs"></div> 
+            <label id="label">Please select an answer: </label>
+            <label for="option1" id="label1">Option 1:</label>
+            <input type="button" id="option1"></input>
+            <label for="option2" id="label2">Option 2:</label>
+            <input type="button" id="option2"></input>
+            <label for="option3" id="label3">Option 3:</label>
+            <input type="button" id="option3"></input>
+            <label for="option4" id="label4">Option 4:</label>
+            <input type="button" id="option4"></input>
+
+            <input type="submit" value="Submit" class="SubAns">
+        </div>
+            <button class="button">Go back to gameboard</button>
     </section>
 </body>
 </html>

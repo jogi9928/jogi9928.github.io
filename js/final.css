@@ -11,6 +11,7 @@ html, body
 {
     height: 80vh;
     width: 80vw;
+    margin-top:7vh;
     border: 1vh solid rgb(10, 10, 10);
     margin-left:10%;
 }
@@ -21,8 +22,42 @@ html, body
     width: 80vw;
     display:none;
     border: 1vh solid rgb(10, 10, 10);
-    background-color: brown;
+    background-color: rgb(100,100,100);
     font-family: 'Franklin Gothic Medium';
+    margin-left:10%;
+    background-image: url('../img/alien-boss-1.webp');
+    background-size: cover;
+    margin-bottom:10vh;
+    margin-top:5vh;
+    padding-bottom:10vh;
+}
+.triviaGame p
+{
+    text-align: center;
+    color:whitesmoke;
+}
+#box
+{
+    color:whitesmoke;
+    text-align: center;
+    font-size: 3em;
+    padding:3vh;
+    background-color: rgb(10, 10, 10);
+}
+#box label
+{
+    font-size: .5em;
+}
+.button
+{
+    display: none;
+    background-color: rgb(10, 10, 10);
+    color:whitesmoke;
+    margin-left:32.5vw;
+    font-size:1em;
+    width: 15vw;
+    height: 10vh;
+    align-content: center;
 }
 .grid-parent{
     height:65vh;

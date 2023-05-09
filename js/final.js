@@ -8,10 +8,16 @@ var rollNumber = 0;
 let currentLeft = { position: 0};
 let currentTop = { position: 0};
 let turns = { rolls: 0 };
+let triviaQ = 
+{ 
+    Q: '',
+    Yes: '',
+    No: ['']
+};
 
 
 // take trivia and multiple choice answers for API
-const endpoint = 'https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple';
+const endpoint = 'https://the-trivia-api.com/v2/questions';
 
 async function getQuote()
 {
@@ -23,7 +29,20 @@ async function getQuote()
             throw Error(response.statusText);
         }
         const json = await response.json();
-        console.log(json);
+        let j=0;
+        for(let i=0;i<10;i++)
+        {
+            if(json[i].category === 'film_and_tv')
+            {
+                j=i;
+                break;
+            }
+        }
+        triviaQ.Q = json[j].question.text;
+        triviaQ.Yes = json[j].correctAnswer;
+        triviaQ.No = json[j].incorrectAnswers;
+        
+        triviaG(triviaQ);
     }
     catch(err)
     {
@@ -31,7 +50,6 @@ async function getQuote()
         alert('Failed to fetch new quote');
     }
 }
-getQuote();
 
 // javascript for spaceship animation
 
@@ -56,15 +74,96 @@ function rotateCraftRight() {
         spaceCraft.style.transform = 'translateX(1.25vw) translateY(53.5vh) rotate(45deg)';
     return promise; 
 }
-function goBack() {
+function goBack(num) {
     var triviaGame = document.querySelector('.triviaGame');
     triviaGame.style.display = 'none';
     var gameBoard = document.querySelector('.gameBoard');
     gameBoard.style.display = 'block'; 
+    if(num===1)
+    {
+        moveCraft('5');
+    }
 }
-function triviaG() {
-    var btn = document.querySelector('button');
-    btn.addEventListener('click', goBack);
+function triviaG(json) {
+        var triviaQs = document.querySelector('#Qs');
+       `// change background image for each boss`
+        triviaQs.textContent = json.Q;
+        alert('Beat trivia Boss level 1 and get a headstart through his passage.');
+        var SelectedOpt = { value: ''};
+        var random = Math.floor(Math.random()*4) + 1;
+
+        var SO1 = document.querySelector('#label1');
+        var SO2 = document.querySelector('#label2');
+        var SO3 = document.querySelector('#label3');
+        var SO4 = document.querySelector('#label4');
+        
+        if(random===1)
+        {
+            SO1.textContent=json.Yes;
+            SO2.textContent=json.No[0];
+            SO3.textContent=json.No[1];
+            SO4.textContent=json.No[2];
+        }
+        else if(random===2)
+        {
+            SO1.textContent=json.No[0];
+            SO2.textContent=json.Yes;
+            SO3.textContent=json.No[1];
+            SO4.textContent=json.No[2];
+        }
+        else if(random===3)
+        {
+            SO1.textContent=json.No[0];
+            SO2.textContent=json.No[1];
+            SO3.textContent=json.Yes;
+            SO4.textContent=json.No[2];
+        }
+        else
+        {
+            SO1.textContent=json.No[0];
+            SO2.textContent=json.No[1];
+            SO3.textContent=json.No[2];
+            SO4.textContent=json.Yes;
+        }
+
+        var Opt1 = document.querySelector('#option1');
+        Opt1.addEventListener('click', function(){
+            SelectedOpt.value=SO1.textContent;
+        });
+        var Opt2 = document.querySelector('#option2');
+        Opt2.addEventListener('click', function(){
+            SelectedOpt.value=SO2.textContent;
+        });
+        var Opt3 = document.querySelector('#option3');
+            Opt3.addEventListener('click', function(){
+            SelectedOpt.value=SO3.textContent;
+        });
+        var Opt4 = document.querySelector('#option4');
+        Opt4.addEventListener('click', function(){
+            SelectedOpt.value=SO4.textContent;
+        });
+
+        var Submit = document.querySelector('.SubAns');
+    
+        Submit.addEventListener('click', function(){
+            var label = document.querySelector('#box');
+            if(SelectedOpt.value===json.Yes)
+            {
+                label.textContent='You answered correctly. You will move 5 spaces forward!';
+                var btn = document.querySelector('button');
+                btn.style.display = 'block';
+               // label.classList.add('.button');
+                btn.addEventListener('click', () => goBack('1'));
+            }
+            else
+            {
+                var btn = document.querySelector('button');
+                btn.style.display = 'block';
+                //label.classList.add('.button');
+                btn.addEventListener('click', () => goBack('0'));
+                label.textContent='You answered incorrectly...';
+            }
+        });
 }
 
 
@@ -83,7 +182,7 @@ async function moveCraft(rollNumber) {
                 var triviaGame = document.querySelector('.triviaGame');
                 triviaGame.style.display = 'block';
                 i=rollNumber;
-                triviaG();   
+                getQuote();   
                 count.count++;             
             }
             else if(count.count===5 || count.count===14 || count.count===19)
@@ -130,7 +229,7 @@ async function moveCraft(rollNumber) {
         var triviaGame = document.querySelector('.triviaGame');
         triviaGame.style.display = 'block';
         i=rollNumber;
-        triviaG();   
+        getQuote();   
         count.count++; 
     }
 }
@@ -177,5 +276,8 @@ async function rollDie() {
 }
 // prevents user from spamming button
 dieRoll.addEventListener('click', rollDie);
-
-
+var gameBoard = document.querySelector('.gameBoard');
+                gameBoard.style.display = 'none';
+                var triviaGame = document.querySelector('.triviaGame');
+                triviaGame.style.display = 'block';
+getQuote();
