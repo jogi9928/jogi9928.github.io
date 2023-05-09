@@ -319,6 +319,9 @@ function newBoard(){
     var G19 = document.querySelector('#no19');
     var G20 = document.querySelector('#no20');
     var G21 = document.querySelector('#no21');
+    G21.textContent = 'FINISH';
+    G11.textContent = '';
+    G10.textContent = 'STOP';
     G1.id = 'no22';
     G2.id = 'no23';
     G3.id = 'no24';

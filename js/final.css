@@ -281,12 +281,13 @@ html, body
     border: 5px solid rgb(10, 10, 10);
     border-top:none;
     border-bottom: 2.5px solid rgb(10, 10, 10);
+    background-color:red;
 }
 #no32{
     grid-row:3;
     grid-column: 6;
     border: 5px solid rgb(10, 10, 10);
-    background-color:red;
+    
     border-top: 2.5px solid rgb(10, 10, 10);
     border-bottom: 2.5px solid rgb(10, 10, 10);
 }
