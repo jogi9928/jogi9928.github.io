@@ -133,7 +133,7 @@ function triviaG(json) {
     console.log(json);
     
         triviaQs.textContent = json.Q;
-        alert('Beat trivia Boss level 1 and get a headstart through his passage.');
+        alert('Beat trivia Boss level and get a headstart through his passage.');
         var SelectedOpt = { value: ''};
         var random = Math.floor(Math.random()*4) + 1;
         

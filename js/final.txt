@@ -1,3 +1,10 @@
+What I have created:
+    I created a space adventure trivia game. It contains two level in which a player rolls a die to move forwards. 
+Every 10 spaces the player must answer a trivia question, and if they answer correctly, they will be deducted a turn.
+The objective is to try and reach the finish in the lowest number of turns. I designed the game using similar CSS as my 
+previous webpage, and created my own URL for this project.
+
+
 inspiration for die animation
 https://icodemag.com/3d-rolling-dice-css-javascript/
 
