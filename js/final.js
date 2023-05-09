@@ -358,6 +358,7 @@ async function rollDie() {
     if(count.count==43)
     {
         alert('You have won the game in ' + turns.rolls + ' rolls. Refresh page to try again!');
+        return;
     }
     dieRoll.removeEventListener('click', rollDie);
     turns.rolls++;
