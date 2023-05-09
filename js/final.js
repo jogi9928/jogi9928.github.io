@@ -112,7 +112,7 @@ function goBack(num) {
     gameBoard.style.display = 'block'; 
     if(num===1)
     {
-        turns.rolls--;
+        turns.rolls = turns.rolls - 1;
     }
     btn.style.display = 'none';
     dieRoll.addEventListener('click', rollDie);
@@ -184,16 +184,16 @@ function triviaG(json) {
         Submit.addEventListener('click', function(){
             if(SelectedOpt.value===json.Yes)
             {
-                triviaQs.textContent='You answered correctly. You will be deducted a turn!';
+                triviaQs.textContent='You answered correctly. You will be turns will be deducted!';
                 btn.style.display = 'block';
                // label.classList.add('.button');
-               var num=1;
+                const num=1;
                 btn.addEventListener('click', () => goBack(num));
                 Submit.style.display='none';
             }
             else
             {
-                var num=0;
+                const num=0;
                 btn.style.display = 'block';
                 //label.classList.add('.button');
                 btn.addEventListener('click', () => goBack(num));
