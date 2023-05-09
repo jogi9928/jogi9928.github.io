@@ -220,6 +220,139 @@ html, body
     border-left:none;
     background-color:red;
 }
+#no22{
+    grid-row:4;
+    grid-column: 1;
+    border: 5px solid rgb(10, 10, 10);
+    border-right:none;
+}
+#no23{
+    grid-row:4;
+    grid-column: 2;
+    border: 5px solid rgb(10, 10, 10);
+    border-right:none;
+}
+#no24{
+    grid-row:4;
+    grid-column: 3;
+    border: 5px solid rgb(10, 10, 10);
+}
+#no25{
+    grid-row:3;
+    grid-column: 3;
+    border: 5px solid rgb(10, 10, 10);
+    border-bottom:none;
+    border-top: 2.5px solid rgb(10, 10, 10);
+}
+#no26{
+    grid-row:2;
+    grid-column: 3;
+    border: 5px solid rgb(10, 10, 10);
+    border-bottom: 2.5px solid rgb(10, 10, 10);
+    border-top:none;
+}
+#no27{
+    grid-row:1;
+    grid-column: 3;
+    border: 5px solid rgb(10, 10, 10);
+}
+#no28{
+    grid-row:1;
+    grid-column: 4;
+    border: 5px solid rgb(10, 10, 10);
+    border-left:none;
+    border-right: 2.5px solid rgb(10, 10, 10);
+}
+#no29{
+    grid-row:1;
+    grid-column: 5;
+    border: 5px solid rgb(10, 10, 10);
+    border-left: 2.5px solid rgb(10, 10, 10);
+    border-right:none;
+}
+#no30{
+    grid-row:1;
+    grid-column: 6;
+    border: 5px solid rgb(10, 10, 10);
+}
+#no31{
+    grid-row:2;
+    grid-column: 6;
+    border: 5px solid rgb(10, 10, 10);
+    border-top:none;
+    border-bottom: 2.5px solid rgb(10, 10, 10);
+}
+#no32{
+    grid-row:3;
+    grid-column: 6;
+    border: 5px solid rgb(10, 10, 10);
+    background-color:red;
+    border-top: 2.5px solid rgb(10, 10, 10);
+    border-bottom: 2.5px solid rgb(10, 10, 10);
+}
+#no33{
+    grid-row:4;
+    grid-column: 6;
+    border: 5px solid rgb(10, 10, 10);
+    border-top: 2.5px solid rgb(10, 10, 10);
+    border-bottom:none;
+}
+#no34{
+    grid-row:5;
+    grid-column: 6;
+    border: 5px solid rgb(10, 10, 10);
+}
+#no35{
+    grid-row:5;
+    grid-column: 7;
+    border: 5px solid rgb(10, 10, 10);
+    border-left:none;
+    border-right:none;
+}
+#no36{
+    grid-row:5;
+    grid-column: 8;
+    border: 5px solid rgb(10, 10, 10);
+}
+#no37{
+    grid-row:4;
+    grid-column: 8;
+    border: 5px solid rgb(10, 10, 10);
+    border-bottom:none;
+    border-top: 2.5px solid rgb(10, 10, 10);
+}
+#no38{
+    grid-row:3;
+    grid-column: 8;
+    border: 5px solid rgb(10, 10, 10);
+    border-bottom: 2.5px solid rgb(10, 10, 10);
+    border-top: none;
+}
+#no39{
+    grid-row:2;
+    grid-column: 8;
+    border: 5px solid rgb(10, 10, 10);
+    border-top:none;
+}
+#no40{
+    grid-row:1;
+    grid-column: 8;
+    border: 5px solid rgb(10, 10, 10);
+}
+#no41{
+    grid-row:1;
+    grid-column: 9;
+    border: 5px solid rgb(10, 10, 10);
+    border-left:none;
+    border-right: 2.5px solid rgb(10, 10, 10);
+}
+#no42{
+    grid-row:1;
+    grid-column: 10;
+    border: 5px solid rgb(10, 10, 10);
+    border-left: 2.5px solid rgb(10, 10, 10);
+    background-color:red;
+}
 /* Styling for spaceship */
 #spaceCraft
 {
