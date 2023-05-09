@@ -5,8 +5,9 @@ background image:
 https://i.pinimg.com/originals/b4/2b/ad/b42badff8069acf080b4b57857670e8c.jpg
 
 trivia questions:
-https://opentdb.com/api_config.php 
+https://the-trivia-api.com/docs/v2/
 
 triviaSection background:
 https://www.vecteezy.com/vector-art/418687-aliens-ufo-in-the-galaxy
 the rest of the images are from vecteezy for free.
+

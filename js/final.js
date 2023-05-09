@@ -8,12 +8,6 @@ var rollNumber = 0;
 let currentLeft = { position: 0};
 let currentTop = { position: 0};
 let turns = { rolls: 0 };
-let triviaQ = 
-{ 
-    Q: '',
-    Yes: '',
-    No: ['']
-};
 
 
 // take trivia and multiple choice answers for API
@@ -23,21 +17,36 @@ async function getQuote()
 {
     try
     {
-        const response = await fetch(endpoint);
+        var response = await fetch(endpoint);
         if(!response.ok)
         {
             throw Error(response.statusText);
         }
-        const json = await response.json();
+        var json = await response.json();
         let j=0;
+        let z=0;
+        let x=0;
         for(let i=0;i<10;i++)
         {
-            if(json[i].category === 'film_and_tv')
+            if(json[i].category === 'general_knowledge')
             {
                 j=i;
-                break;
+            }
+            else if(json[i].category === 'history')
+            {
+                x=i;
+            }
+            else if(json[i].category ==='film_and_tv')
+            {
+                z=i;
             }
         }
+        var triviaQ = 
+        { 
+            Q: '',
+            Yes: '',
+            No: ['']
+        };
         triviaQ.Q = json[j].question.text;
         triviaQ.Yes = json[j].correctAnswer;
         triviaQ.No = json[j].incorrectAnswers;
@@ -79,13 +88,17 @@ function goBack(num) {
     triviaGame.style.display = 'none';
     var gameBoard = document.querySelector('.gameBoard');
     gameBoard.style.display = 'block'; 
+    var number=5;
     if(num===1)
     {
-        moveCraft('5');
+        moveCraft(number);
     }
+    var Nn=2;
+    getQuote(Nn);
 }
 function triviaG(json) {
         var triviaQs = document.querySelector('#Qs');
+        triviaQs.textContent = '';
        `// change background image for each boss`
         triviaQs.textContent = json.Q;
         alert('Beat trivia Boss level 1 and get a headstart through his passage.');
@@ -153,14 +166,16 @@ function triviaG(json) {
                 var btn = document.querySelector('button');
                 btn.style.display = 'block';
                // label.classList.add('.button');
-                btn.addEventListener('click', () => goBack('1'));
+               var num=1;
+                btn.addEventListener('click', () => goBack(num));
             }
             else
             {
+                var num=0;
                 var btn = document.querySelector('button');
                 btn.style.display = 'block';
                 //label.classList.add('.button');
-                btn.addEventListener('click', () => goBack('0'));
+                btn.addEventListener('click', () => goBack(num));
                 label.textContent='You answered incorrectly...';
             }
         });
@@ -182,7 +197,8 @@ async function moveCraft(rollNumber) {
                 var triviaGame = document.querySelector('.triviaGame');
                 triviaGame.style.display = 'block';
                 i=rollNumber;
-                getQuote();   
+                var number=1;
+                getQuote(number);   
                 count.count++;             
             }
             else if(count.count===5 || count.count===14 || count.count===19)
@@ -229,7 +245,8 @@ async function moveCraft(rollNumber) {
         var triviaGame = document.querySelector('.triviaGame');
         triviaGame.style.display = 'block';
         i=rollNumber;
-        getQuote();   
+        var number=2;
+        getQuote(number);   
         count.count++; 
     }
 }
@@ -249,11 +266,9 @@ async function rollDie() {
     turnT.textContent = 'Turns: ' + turns.rolls;
 
     var random = Math.floor(Math.random()*6) + 1;
-    console.log(random);
 
     var newFace = 'face-' + random;
     rollNumber = random;
-    console.log(newFace);
     if(newFace===currentFace)
     {
         var faceNum = '.face' + random;
@@ -274,10 +289,11 @@ async function rollDie() {
     await pause1();
     dieRoll.addEventListener('click', rollDie);
 }
-// prevents user from spamming button
 dieRoll.addEventListener('click', rollDie);
+// prevents user from spamming button
 var gameBoard = document.querySelector('.gameBoard');
                 gameBoard.style.display = 'none';
                 var triviaGame = document.querySelector('.triviaGame');
                 triviaGame.style.display = 'block';
-getQuote();
+                var number = 1;
+                getQuote();
