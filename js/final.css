@@ -162,7 +162,7 @@ html, body
     line-height:11vh;
     font-weight: bold;
     text-align:center;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 #no12{
     grid-row:3;
@@ -228,7 +228,7 @@ html, body
     font-weight: bold;
     line-height:11vh;
     text-align:center;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 #no22{
     grid-row:4;
@@ -295,7 +295,7 @@ html, body
     font-weight: bold;
     line-height:11vh;
     text-align:center;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 #no32{
     grid-row:3;
@@ -370,7 +370,7 @@ html, body
     font-weight: bold;
     line-height:11vh;
     text-align:center;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 /* Styling for spaceship */
 #spaceCraft
