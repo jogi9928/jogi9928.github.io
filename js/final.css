@@ -160,6 +160,7 @@ html, body
     border: 5px solid rgb(10, 10, 10);
     background-color: red;
     line-height:11vh;
+    font-weight: bold;
     text-align:center;
     font-size: 1em;
 }
@@ -224,6 +225,7 @@ html, body
     border: 5px solid rgb(10, 10, 10);
     border-left:none;
     background-color:red;
+    font-weight: bold;
     line-height:11vh;
     text-align:center;
     font-size: 1em;
@@ -290,6 +292,7 @@ html, body
     border-top:none;
     border-bottom: 2.5px solid rgb(10, 10, 10);
     background-color:red;
+    font-weight: bold;
     line-height:11vh;
     text-align:center;
     font-size: 1em;
@@ -364,6 +367,7 @@ html, body
     border: 5px solid rgb(10, 10, 10);
     border-left: 2.5px solid rgb(10, 10, 10);
     background-color:red;
+    font-weight: bold;
     line-height:11vh;
     text-align:center;
     font-size: 1em;
