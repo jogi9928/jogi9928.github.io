@@ -130,6 +130,7 @@ var Submit = document.querySelector('.SubAns');
 var btn = document.querySelector('button');
 var triviaQs = document.querySelector('#Qs');
 function triviaG(json) {
+    Submit.style.display='flex';
     console.log(json);
     
         triviaQs.textContent = json.Q;
@@ -188,6 +189,7 @@ function triviaG(json) {
                // label.classList.add('.button');
                var num=1;
                 btn.addEventListener('click', () => goBack(num));
+                Submit.style.display='none';
             }
             else
             {
@@ -196,6 +198,7 @@ function triviaG(json) {
                 //label.classList.add('.button');
                 btn.addEventListener('click', () => goBack(num));
                 triviaQs.textContent='You answered incorrectly...';
+                Submit.style.display='none';
             }
         });
 }

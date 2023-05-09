@@ -7,6 +7,11 @@ html, body
     background-color: skyblue;     
 }
 /*create gameboard */
+.SubAns
+{
+    margin-left:35vw;
+    margin-top:2vh;
+}
 .gameBoard
 {
     height: 80vh;
@@ -235,6 +240,9 @@ html, body
     grid-column: 1;
     border: 5px solid rgb(10, 10, 10);
     border-right:none;
+    line-height:11vh;
+    text-align:center;
+    font-size: 2em;
 }
 #no23{
     grid-row:4;
@@ -293,7 +301,7 @@ html, body
     border-bottom: 2.5px solid rgb(10, 10, 10);
     background-color:red;
     font-weight: bold;
-    line-height:11vh;
+    line-height:13vh;
     text-align:center;
     font-size: 1.25em;
 }
@@ -368,7 +376,7 @@ html, body
     border-left: 2.5px solid rgb(10, 10, 10);
     background-color:red;
     font-weight: bold;
-    line-height:11vh;
+    line-height:13vh;
     text-align:center;
     font-size: 1.25em;
 }
