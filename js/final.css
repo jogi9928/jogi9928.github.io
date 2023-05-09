@@ -7,14 +7,24 @@ html, body
     background-color: skyblue;     
 }
 /*create gameboard */
-#gameBoard
+.gameBoard
 {
     height: 80vh;
     width: 80vw;
     border: 1vh solid rgb(10, 10, 10);
     margin-left:10%;
 }
-#grid-parent{
+/* trivia game */
+.triviaGame
+{
+    height: 80vh;
+    width: 80vw;
+    display:none;
+    border: 1vh solid rgb(10, 10, 10);
+    background-color: brown;
+    font-family: 'Franklin Gothic Medium';
+}
+.grid-parent{
     height:65vh;
     display:grid;
     border-bottom: 1vh solid rgb(10, 10, 10);
@@ -29,7 +39,7 @@ html, body
     padding-left:1vw;
     padding-right:1vw;
 }
-#grid-parent h2
+.grid-parent h2
 {
     margin:0;
     padding:0;
@@ -37,7 +47,7 @@ html, body
     background-color: whitesmoke;
     
 }
-#grid-parent div
+.grid-parent div
 {
     margin:0;
     padding:0;
@@ -111,6 +121,7 @@ html, body
     grid-row:3;
     grid-column: 5;
     border: 5px solid rgb(10, 10, 10);
+    background-color: red;
 }
 #no12{
     grid-row:3;
@@ -172,13 +183,14 @@ html, body
     grid-column: 10;
     border: 5px solid rgb(10, 10, 10);
     border-left:none;
+    background-color:red;
 }
 /* Styling for spaceship */
 #spaceCraft
 {
     position: relative;
-    height: 10vh;
-    transform: translateX(1.25vw) translateY(53.5vh) rotate(45deg);
+    width:4.5vw;
+    transform: translateX(1.25vw) translateY(54vh) rotate(45deg);
     transition-duration: 1s;
     left:0;
     top:0;
@@ -221,7 +233,7 @@ html, body
     transform-style: preserve-3d;
     transform: translateZ(-3.5vh);
     transition-property: transform;
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 
 /* make die rolling animation classes */
